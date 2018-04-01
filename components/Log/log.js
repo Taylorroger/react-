@@ -1,10 +1,9 @@
 /**
  * Created by zzl on 2017/8/10.
  */
+//登陆页面组件
 import React from 'react';
 import Redirect from 'react-router'
-import Home from '../Store/Home'
-import ReactDOM from 'react-dom'
 import "./log.scss"
 import {Link,IndexLink} from 'react-router';
 

@@ -4,6 +4,7 @@
 import React from 'react';
 import {Link} from 'react-router'
 import './serv.scss'
+//客服中心页面
 const Service=()=>(
     <article className="serv">
          <section className="left">

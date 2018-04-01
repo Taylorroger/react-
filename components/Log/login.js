@@ -1,9 +1,6 @@
 import React from "react";
-import {Redirect} from 'react-router'
-import {loging} from "../../actions/actions";
-import Home from "../Store/Home";
-
-class PasswordLog extends React.Component {
+//
+class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state={username:'',password:''}
@@ -95,4 +92,4 @@ class PasswordLog extends React.Component {
             )
     }
 }
-export default PasswordLog
+export default Login

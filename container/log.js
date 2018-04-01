@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import {log_sucess} from "../actions/actions";
-import PasswordLog from '../components/Log/PasswordLog'
+import PasswordLog from '../components/Log/login'
 
 const mapStateToProps=state=>{
     return{

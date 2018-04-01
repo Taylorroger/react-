@@ -7,12 +7,12 @@ import {Router as Router,Route,browserHistory,IndexRoute} from 'react-router'
 import Header from './const/Header.js'
 import Footer from './const/Footer.js'
 import Home from './Store/Home.js'
-import Coopratation from './Coopretation/index.js'
+import Coopratation from './Coopretation/coopretation.js'
 import ShowBox from './PersonInfo/Center';
 import Service from './Service/Service.js'
 import LogContainer from '../container/logParent'
-import PhoneLog from './Log/PhoneLog'
-import PassLog from '../container/log'
+import Register from './Log/register'
+import Login from '../container/log'
 import Bullet from './regular/serRegular.js'
 import Detail from './Store/Store.js'
 import Board from './Service/Bullet'
@@ -37,11 +37,6 @@ class App extends React.Component{
         )
     }
 }
-const authRequired=(store)={
-    if(!store.getState().log.isLogin){
-        
-}
-}
 
 ReactDOM.render(
     <Provider store={store}>
@@ -56,9 +51,9 @@ ReactDOM.render(
             <Route path="detail" component={Detail}/>
             <Route path="bullet" component={Board}/>
             <Route path="Log" component={LogContainer}>
-                <IndexRoute  component={PhoneLog}/>
-                <Route path='/PhoneLog' component={PhoneLog}/>
-                <Route path='/PasswordLog' component={PassLog}/>
+                <IndexRoute  component={Register}/>
+                <Route path='/PhoneLog' component={Register}/>
+                <Route path='/PasswordLog' component={Login}/>
             </Route>
         </Route>
     </Router>

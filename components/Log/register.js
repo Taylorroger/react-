@@ -1,6 +1,6 @@
 import React from "react";
-
-class PhoneLog extends React.Component{
+//注册页面
+class Register extends React.Component{
     render(){
         return(
             <form>
@@ -12,4 +12,4 @@ class PhoneLog extends React.Component{
         )
     }
 }
-export default PhoneLog
+export default Register

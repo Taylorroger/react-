@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import './coopretation.scss';
 const Coopratation=()=>(
     <article className="coopration">
         <section>

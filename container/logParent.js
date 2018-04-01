@@ -1,5 +1,5 @@
 import React from 'react'
-import Log from '../components/Log/Log'
+import Log from '../components/Log/log'
 import {connect} from 'react-redux'
 const mapStateToProps=(state)=>{
     return {

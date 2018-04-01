@@ -2,8 +2,8 @@
  * Created by zzl on 2017/8/31.
  */
 import React from 'react';
-import {Link} from 'react-router';
 import './serRegular.scss'
+//服务说明页面组件
 const NavBar=()=>(
     <ul className="nav">
         <li>饿了么平台规则

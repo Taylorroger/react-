@@ -1,6 +1,4 @@
-/**
- * Created by zzl on 2017/7/25.
- */
+
 //我要开店页面
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -8,7 +6,7 @@ import man1 from '../../image/man1.png';
 import man2 from "../../image/man2.png";
 import man4 from "../../image/man4.png";
 import man5 from "../../image/man4.png"
-import './fundStore.scss'
+import './business.scss'
 const Header=()=>(
     <header>
         <section>
