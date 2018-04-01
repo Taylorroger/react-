@@ -1,0 +1,54 @@
+article.serv,section, ul ,p ,li{
+  margin: 0;
+  padding: 0;
+}
+article.serv{
+  width: 80em;
+  margin: 3em auto;
+  position: relative;
+  overflow: hidden;
+  .left{
+    float: left;
+    width: 55em;
+    padding: 2em;
+    background: white;
+    p{
+      margin:0;
+      font-size: 1.2em;
+    }
+    .ques1{
+      list-style: none;
+      padding: 1em 0;
+      li{
+        display: inline-block;
+        width: 8em;
+        margin-left: 5em;
+      }
+    }
+    .ques2{
+      font-size: 0.8em;
+      list-style: none;
+      column-count: 2;
+      column-gap: 2em;
+      li{
+        padding-top: 0.8em;
+      }
+
+    }
+  }
+  .right{
+    width: 16em;
+    padding: 2em;
+    text-align: left;
+    float: right;
+    background: white;
+    p{
+      font-size: 0.8em;
+      line-height: 1.8em;
+      span{
+        font-size: 1.5em;
+      }
+    }
+
+  }
+}

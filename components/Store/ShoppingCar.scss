@@ -1,0 +1,38 @@
+article,section,p,h4,ul {
+  margin: 0;
+  padding: 0;
+}
+
+.shopping_Car{
+  width: 18em;
+  height: 100%;
+  position:fixed;
+  z-index: 100;
+  top:0;
+  background-color: rgb(247,247,247);
+  overflow: hidden;
+}
+.shopping_Car .navBar{
+  background-color: rgb(80,77,83) ;
+  color:white;
+  width: 1em;
+  height: inherit;
+  padding: 0.5em 0.5em;
+  float: left;
+  font-size: 1em;
+}
+.shopping_Car .navBar ul{
+  margin: 10em auto;
+}
+.shopping_Car .navBar ul li{
+  list-style: none;
+  display: block;
+  margin: 1em auto;
+}
+.shopping_Car .content{
+  width: 15em;
+  float: right;
+}
+h6{
+  padding: 1em;
+}

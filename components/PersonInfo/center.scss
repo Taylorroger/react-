@@ -1,0 +1,70 @@
+.displayBoard{
+  width: 70em;
+  margin: 3em auto;
+  background-color: #F7F7F7;
+  position: relative;
+  overflow: hidden;
+  .navBar{
+    width: 10em;
+    text-align:left;
+    float: left;
+    li{
+      display: block;
+      width: inherit;
+      margin: 1em 1em;
+    }
+  }
+  .info{
+    width:55em;
+    padding: 2em;
+    float: right;
+    border:none;
+    .baseInfo{
+      width: 100%;
+      background-color: white;
+      text-align: center;
+      li{
+        display: inline-block;
+        width: 8em;
+        padding: 1em;
+      }
+      li:first-child{
+        width: 17em;
+        .title{
+          li{
+            width: 5em;
+          }
+          img{
+            width: 5em;
+            border-radius: 50%;
+          }
+        }
+
+      }
+    }
+    .orderInfo{
+      width: 51em;
+      margin-top: 2em;
+      padding: 2em;
+      background-color: white;
+      h3{
+        width: 5em;
+        padding: 1em;
+        border-bottom: 2px solid #0089DC;
+      }
+      p{
+        border-top: 1px solid #F7F7F7;
+      }
+    }
+    .prviate{
+      width: 51em;
+      padding: 2em;
+      margin-top: 2em;
+      background-color: white;
+      li{
+        display: inline-block;
+        width: 8em;
+      }
+    }
+  }
+}

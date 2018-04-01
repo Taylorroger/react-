@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.board{
+  background-color:white;
+  width: 100%;
+  padding-top: 2em;
+  overflow: hidden;
+  .nav{
+    width: 20em;
+    margin: 0;
+    float: left;
+    font-size: 0.8em;
+    li{
+      padding: 1em 1em;
+    }
+  }
+  .detail{
+    width:60em;
+    margin: 0;
+    float: right;
+    text-align: left;
+    line-height: 1.5em;
+  }
+}

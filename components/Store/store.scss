@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+//商家信息简介样式
+.fundInfo,.findBar{
+  background-color: #FFFFFF;
+  overflow: hidden;
+  width:74em;
+  padding: 2em 5.5em;
+}
+.fundInfo{
+  background: url(//faas.elemecdn.com/desktop/media/img/shop-bg.0391dd.jpg) no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  width: inherit;
+  padding: 1em 5em;
+    img{
+      width: 6em;
+      border-radius: 3em;
+    }
+  .right{
+    position: relative;
+    float: right;
+    li{
+      font-size: 1.5em;
+      line-height: 2em;
+      text-align: center;
+      display: inline-block;
+      width:6em;
+      margin-left: 2em;
+    }
+  }
+
+}
+.findBar{
+  width: inherit;
+  padding: 1em 5em;
+  text-align: center;
+  .left{
+    position: relative;
+    float: left;
+    li{
+      list-style: none;
+      display: inline-block;
+      font-size: 1.2em;
+      width: 4em;
+      padding: 0 0.5em;
+      border-right: 1px solid gray;
+    }
+  }
+  .right{
+    padding-right: 4em;
+    position: relative;
+    float: right;
+    li{
+      list-style: none;
+      border-right:1px solid gray;
+      display: inline-block;
+     margin-right: 2em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    input[type='text']{
+      line-height: 2em;
+    }
+    }
+  }
+}
+
+.detail{
+  width: 56em;
+  margin-top: 2em;
+  margin-left: 5em;
+  float: left;
+  overflow:hidden ;
+}
+
+.menu{
+  width: 70em;
+  padding: 1em 0;
+  float: left;
+  background-color: white;
+  font-size: 0.8em;
+  color: #666666;
+  li{
+    list-style: none;
+    display: inline-block;
+    width: 8em;
+    margin-left: 2em;
+    padding: 0.5em;
+  }
+  li:hover{
+    background-color:#F6F6F6 ;
+  }
+}
+
+.content{
+  width: 70em;
+  overflow: hidden;
+  p{
+    font-size: 1em;
+    small{
+      color: #666666;
+    }
+  }
+  .singleInfo{
+    background-color: white;
+    display: block;
+    float: left;
+    width: 32em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    padding: 1em;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    img{
+      width: 7em;
+      float: left;
+    }
+    .info{
+      width: 22em;
+      float: right;
+      ul {
+        position: relative;
+        li{
+          width: inherit;
+          color: #666666;
+          word-break: keep-all;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        li:last-child {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          button{
+            width: 8em;
+            padding: 0.2em;
+            background-color:#0089DC;
+            color: white;
+            border: none;
+            border-radius: 1em;
+          }
+
+        }
+      }
+    }
+  }
+}
+aside {
+  width: 16em;
+  position: relative;
+  float: right;
+  margin-top: 2em;
+  margin-right: 4em;
+  .notation {
+    background-color: white;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    h4 {
+      background-color: #0089DC;
+      color: white;
+      padding: 1em;
+    }
+    p {
+      padding: 0.5em 1em;
+    }
+    p:last-child {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+  .shoppingCar{
+    position: fixed;
+    right:0;
+    bottom: 0;
+    width:18em;
+    border-top:2px solid #1E89E0;
+  }
+  .shoppingCar p{
+    width: inherit;
+    padding-top: 1em;
+    background-color: #FFFFFF;
+  }
+  .shoppingCar p span{
+    display: inline-block;
+    padding: 1em 0.5em;
+  }
+  .shoppingCar p span:first-child{
+    background-color: dimgray;
+    color: #E6E6E6;
+    width: 10em;
+  }
+  .shoppingCar p span:last-child{
+    background-color: #E6E6E6;
+    width: 6em;
+  }
+}
+

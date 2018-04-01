@@ -1,0 +1,43 @@
+body{
+    background-color:#F7F7F7;
+}
+article.coopration{
+    width:80em;
+    margin: 1em auto;
+    overflow: hidden;
+}
+article.coopration section{
+    width: 17em;
+    height: 17em;
+    margin-left: 1em;
+    margin-top: 1em;
+    padding: 1em 1em;
+    position: relative;
+    float: left;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+article.coopration section img{
+    width: 4em;
+    height: 4em;
+    border-radius: 2em;
+    border: none;
+    margin-top: 2em;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+article.coopration section button{
+    width: 8em;
+    padding: .5em 0;
+    border: 1px solid blue;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 1em;
+    color: blue;
+    position: absolute;
+    top:15em;
+   left:6em;
+}
+article.coopration section p{
+    text-align: center;
+}

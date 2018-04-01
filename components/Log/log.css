@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.log{
+    width: 20em;
+    margin: 5em auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.log ul{
+    width: 100%;
+    margin-bottom: .5em;
+}
+.log h3{
+    width: 100%;
+    margin-bottom: 3em;
+}
+.log ul li{
+    width: 5em;
+    list-style: none;
+    display: inline-block;
+    padding: 0.5em 1em;
+}
+.log ul li:visited{
+    background-color: transparent;
+}
+form{
+    position: relative;
+}
+input[type="text"]{
+    width:95%;
+    line-height: 3.5em;
+    border:1px solid #DDDDDD;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    color: #CCCCCC;
+    outline: none;
+}
+input[type="text"]:focus{
+    border: 1px solid #1B9DFF;
+}
+p{
+    font-size: 0.8em;
+    text-align: left;
+    margin-bottom: 3em;
+}
+.checkCode{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.logButton{
+    width: 100%;
+  line-height: 3.5em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #00D762;
+    color: white;
+    outline: none;
+}

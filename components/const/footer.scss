@@ -1,0 +1,56 @@
+footer{
+  width: 100%;
+  margin-top: 2em;
+  overflow: hidden;
+  border-top: 1px solid #EEEEEE;
+  section{
+    width:76em;
+    margin: 0 auto;
+    padding: 2em 0;
+  }
+  .left{
+    width: 35em;
+    float: left;
+    border-right: 1px solid #EEEEEE;
+    ul{
+      width:8em;
+      float: left;
+      padding-left: 2em;
+      li{
+        color:#999999;
+        font-size: 0.8em;
+        line-height: 2em;
+      }
+      li:first-child{
+        font-size: 1em;
+        color: black;
+      }
+    }
+  }
+  .right{
+    width: 35em;
+    float: right;
+    ul{
+      float: left;
+      width:15em;
+      line-height: 3em;
+    }
+    p{
+      float: right;
+      width: 18em;
+      padding-top:1em; ;
+      font-size: 0.8em;
+      text-align: center;
+      img{
+        width: 6em;
+        height: 6em;
+        background-size: cover;
+        float: left;
+      }
+      span{
+        font-size: 1.5em;
+      }
+
+    }
+  }
+}

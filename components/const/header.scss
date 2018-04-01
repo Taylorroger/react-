@@ -1,0 +1,32 @@
+header{
+  width:100%;
+  background-color: #1E89E0;
+  font-size: 1em;
+  color: white;
+  overflow: hidden;
+  a{
+    color: white;
+  }
+  section{
+    width: 76em;
+    margin: 0 auto;
+    ul li{
+      display: inline-block;
+      width:6em;
+      padding: 1.5em 1em;
+      text-align: center;
+    }
+    .left{
+      width:30em;
+      position: relative;
+      float: left;
+      li:hover,li:active{
+        background-color: #006BC7;
+      }
+    }
+    .right{
+      position: relative;
+      float: right;
+    }
+  }
+}

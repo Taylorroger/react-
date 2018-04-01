@@ -1,0 +1,42 @@
+article,section,ul,li,p,h4{
+  margin: 0;
+  padding: 0;
+}
+article{
+  width: 80em;
+  position: relative;
+  nav{
+     float: right;
+     width: 20em;
+    h4{
+      background: #1E89E0;
+      color: white;
+      padding: 1em 1em;
+    }
+    ul{
+      list-style: none;
+      background: #F9F9F9;
+      li{
+        padding:0.5em 1em ;
+        a{
+          text-decoration: none;
+          color:#1E89E0 ;
+        }
+      }
+
+    }
+   }
+  section{
+    width: 56em;
+    padding: 0 2em 2em 2em;
+    h4{
+      padding: 2em 1em 1em 1em;
+      border-bottom: 2px solid #EEEEEE;
+    }
+    p{
+      padding: 1em 0;
+      font-size: 0.8em;
+      line-height: 1.5em;
+    }
+  }
+}
