@@ -210,7 +210,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="4" />
     <option name="width" value="1375" />
     <option name="height" value="729" />
@@ -451,7 +451,7 @@
     <option name="totallyTimeSpent" value="880757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="0" width="1375" height="729" extended-state="1" />
+    <frame x="4" y="0" width="1375" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23111443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
