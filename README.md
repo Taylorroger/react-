@@ -2,3 +2,5 @@
 采用redux进行全局的登陆状态和订单管理，react-router实现页面间的跳转
 饿了么官网页面的小功能很多。细节也比较复杂，后来发现这正好可以借此进行一次综合练习
 开始是学习react是练手
+
+demo:https://Taylorroger.github.io/react-/index.html
