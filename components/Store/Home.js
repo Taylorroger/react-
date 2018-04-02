@@ -2,7 +2,6 @@
  * Created by zzl on 2017/6/13.
  */
 import React from 'react';
-import ReactDOM from 'react-dom'
 import {Provider} from 'redux'
 import {createStore} from 'react-redux'
 
@@ -11,8 +10,8 @@ import HomeList from './HomeList.js';
 import ShoppingCar from './ShoppingCar'
 import LoadMore from './LoadMore'
 import Send from '../data/data.js'
+import './home.scss'
 
-import {request_sellers_data} from "../../reducers/request"
 var info =[{name:'全部商家'},{name:'美食'},{name:'快餐便当'},{name:'特色菜系'},{name:'异国料理'},
     {name:'小吃夜宵'},{name:'甜品饮品'},{name:'果蔬生鲜'},{name:'鲜花蛋糕'},{name:'商店超市'},
     {name:'早餐'},{name:'正餐优选'},{name:'下午茶'},{name:'夜宵'}];
@@ -85,7 +84,7 @@ class Home extends React.Component{
     }*/
     render(){
         return(
-            <div>
+            <div className='main'>
                 <InfoContainer info={info}/>
                 <HomeList namelist={this.state.productList}/>
                 <ShoppingCar/>

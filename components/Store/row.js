@@ -1,3 +1,4 @@
+//商家商品展示组件
 import React from "react";
 class Menu extends React.Component {
     constructor(props) {
@@ -53,7 +54,7 @@ class MenuCell extends React.Component {
             <button onClick={()=>decrease(list.name)}>-</button>
             <input value={list.number} onChange={()=>(list.number)} />
             <button onClick={()=>addtion(list.name)}>+</button>
-        </fieldset> :<button onClick={()=>{addtion(list.name)}}>加入购物车</button>
+        </fieldset> :<button className='addBtn' onClick={()=>{addtion(list.name)}}>加入购物车</button>
         return (
             <li className="singleInfo">
                 <img src={'https://fuss10.elemecdn.com/' + list.image_path.replace(/(\S\S\S)/, "$1/").replace(/(\S)/, "$1/").replace(/(jpeg|png)/, "$1.$1")}/>

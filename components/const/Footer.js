@@ -2,8 +2,8 @@ import React from 'react';
 import './footer.scss'
 //底部导航栏
 const Footer=()=>(
-    <footer>
-        <section className="left">
+    <div className='footer'>
+        <div className="left">
                 <uL>
                     <li>用户帮助</li>
                     <li><a>服务中心</a></li>
@@ -23,8 +23,8 @@ const Footer=()=>(
                     <li><a>联系我们</a></li>
                     <li><a>规则中心</a></li>
                 </ul>
-        </section>
-            <section className="right">
+        </div>
+            <div className="right">
                 <ul>
                     <li>24小时客服热线：10105757</li>
                     <li>意见反馈：feedback@ele.me</li>
@@ -34,7 +34,7 @@ const Footer=()=>(
                     <img src="./image/info.png"/>
                     <span>下载手机版</span><br/>扫一扫，手机订餐方便
                 </p>
-            </section>
-    </footer>
+            </div>
+    </div>
 )
 export default Footer

@@ -1,9 +1,18 @@
 .list{
   font-size: 0.8em;
   padding: 1.25em;
-  line-height: 1em;
+  border-collapse: collapse;
+  button{
+    width: 1.5em;
+  }
   input[type='text']{
-    width:1em;
-    height: 0.8em;
+    width:3em;
+    height: 1.5em;
+    vertical-align: center;
+  }
+  li{
+    list-style: none;
+    display: block;
+    padding: 0.5em;
   }
 }

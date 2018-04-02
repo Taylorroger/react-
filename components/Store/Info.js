@@ -1,6 +1,7 @@
 /**
  * Created by zzl on 2017/6/1.
  */
+//商家菜单大类分类
 import React from 'react';
 class List extends React.Component{
     render(){

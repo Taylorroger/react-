@@ -1,13 +1,8 @@
-footer{
-  width: 100%;
-  margin-top: 2em;
+.footer{
+  width: 76em;
+  margin: 2em 3em;
   overflow: hidden;
   border-top: 1px solid #EEEEEE;
-  section{
-    width:76em;
-    margin: 0 auto;
-    padding: 2em 0;
-  }
   .left{
     width: 35em;
     float: left;
@@ -15,8 +10,8 @@ footer{
     ul{
       width:8em;
       float: left;
-      padding-left: 2em;
       li{
+        list-style: none;
         color:#999999;
         font-size: 0.8em;
         line-height: 2em;
@@ -34,6 +29,9 @@ footer{
       float: left;
       width:15em;
       line-height: 3em;
+      li{
+        list-style: none;
+      }
     }
     p{
       float: right;

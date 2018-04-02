@@ -1,7 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+
 //商家信息简介样式
 .fundInfo,.findBar{
   background-color: #FFFFFF;
@@ -133,7 +130,7 @@
           position: absolute;
           right: 0;
           bottom: 0;
-          button{
+          .addBtn{
             width: 8em;
             padding: 0.2em;
             background-color:#0089DC;
@@ -141,7 +138,16 @@
             border: none;
             border-radius: 1em;
           }
-
+         fieldset{
+           width: 8em;
+           border-radius: 1em;
+           button{
+             width: 2em;
+           }
+           input[type='text']{
+               width: 2em;
+           }
+         }
         }
       }
     }

@@ -9,7 +9,7 @@ class Header extends React.Component{
     render(){
         return(
         <header>
-            <section>
+            <div className='nav'>
                 <ul className="left">
                     <li><Link to="Home">首页</Link></li>
                     <li><Link to="Center">我的订单</Link></li>
@@ -21,7 +21,7 @@ class Header extends React.Component{
                     <li>手机应用</li>
                     <li><Link to="Log">登录/注册</Link></li>
                 </ul>
-            </section>
+            </div>
         </header>
         )
     }

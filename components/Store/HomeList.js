@@ -38,33 +38,33 @@ class HomeLi extends React.Component{
     }
     render(){
         return(
-            <article>
+            <div className="part">
                 <Link to="detail">
-            <section  id={this.props.info.id} className="container" onClick={this.handleClick}>
-                <p className="images">
+            <div  id={this.props.info.id} className="containerBox" onClick={this.handleClick}>
+                <figure className="images">
                     <img src={'https://fuss10.elemecdn.com/'+this.props.info.image_path.replace(/(\S\S\S)/,"$1/").replace(/(\S)/,"$1/").replace(/(jpeg|png)/,"$1.$1")} alt="图片" />
-                    <h5 className="timeArr">{this.props.info.time}分钟</h5>
-                </p>
-                <p className="infomation" >
-                    <h3>{this.props.info.name}</h3>
+                    <figcaption className="timeArr">{this.props.info.time}25分钟</figcaption>
+                </figure>
+                <div className="infomation" >
+                    <h4>{this.props.info.name}</h4>
                     <ul className="eval">
                         <li>评价星级</li>
                         <li>月售{this.props.info.recent_order_num}单</li>
                         <li>配送费{this.props.info.piecewise_agent_fee&&this.props.info.piecewise_agent_fee.extra_fee}</li>
                     </ul>
-                </p>
-            </section>
+                </div>
+            </div>
                 </Link>
-                <section className="notation" style={this.state}>
-                        <h5>{this.props.info.name}</h5>
+                <div className="notation" style={this.state}>
+                        <h4>{this.props.info.name}</h4>
                         <ul>
                             <li>配送费￥{this.props.info.piecewise_agent_fee&&this.props.info.piecewise_agent_fee.extra_fee}</li>
                             <li>平均{this.props.info.time}分钟送达</li>
                         </ul>
                         <p>{this.props.info.description}</p>
-                </section>
+                </div>
 
-            </article>
+            </div>
         )
     }
 
@@ -76,9 +76,10 @@ class HomeList extends React.Component{
             ListItem.push(<HomeLi info={item} key={i.toString()} />)
         })
         return (
-                <main>
+
+                <div className='listItem'>
                 {ListItem}
-                </main>
+                </div>
         )
     }
 }

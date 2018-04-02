@@ -1,32 +1,36 @@
-header{
-  width:100%;
-  background-color: #1E89E0;
-  font-size: 1em;
-  color: white;
+
+.container{
+  width: 100%;
   overflow: hidden;
-  a{
+  //
+  header{
+    font-size: 1.2em;
     color: white;
-  }
-  section{
-    width: 76em;
-    margin: 0 auto;
-    ul li{
-      display: inline-block;
-      width:6em;
-      padding: 1.5em 1em;
-      text-align: center;
-    }
-    .left{
-      width:30em;
-      position: relative;
-      float: left;
-      li:hover,li:active{
+    background-color: #1E89E0;
+    overflow: hidden;
+    .nav{
+      width: 63.3em;
+      margin: 0 auto;
+      overflow: hidden;
+      a{
+        color: white;
+      }
+      li{
+        list-style: none;
+        float: left;
+        width: 5em;
+        padding: 1em 1em;
+        text-align: center;
+      }
+      li:hover{
         background-color: #006BC7;
       }
-    }
-    .right{
-      position: relative;
-      float: right;
+      .left{
+        float: left;
+      }
+      .right{
+        float: right;
+      }
     }
   }
 }

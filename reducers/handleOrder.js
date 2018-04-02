@@ -28,7 +28,7 @@ function decrease(state,action){
     for(var i=0,len=state.length;i<len;i++){
         temp=state[i]
         if(temp.name==action.name){
-            if(temp.number>=1){
+            if(temp.number>1){
                 state.splice(i,1,{name:action.name,number:temp.number-action.number})
                 return state
             }else{

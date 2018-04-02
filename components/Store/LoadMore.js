@@ -1,8 +1,5 @@
-/**
- * Created by zzl on 2017/6/7.
- */
+//点击加载组件
 import React from 'react';
-import Send from "../data/data";
 
 class LoadMore extends  React.Component{
     constructor(props){

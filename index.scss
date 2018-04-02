@@ -1,75 +1,11 @@
 /*main部分布局*/
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  background-color: #F7F7F7;
+  font-size: 16px;
+}
+  //home页面食物分类块样式
 
-main{
-  width: 76em;
-  margin: 1em 3em;
-}
-.classify{
-  width: 72em;
-  margin: 2em auto;
-  padding: 1em 2em;;
-  border: 1px solid #E6E6E6;
-  background-color: #FFFFFF;
-}
-.classify li{
-  width:5em;
-  display: inline-block;
-  padding: 0.5em 0.5em;
-  font-size: 0.8em;
-  line-height: 1.5em;
-  text-align: center;
-}
-.classify li:hover{
-  background-color: #F6F6F6;
-}
-.container{
-  width:17em;
-  padding: 1em 1em;
-  height: 6em;
-  float: left;
-  background-color: #FFFFFF;
-}
-.container:hover{
-  background-color:#E6E6E6;
-}
-.notation{
-  width: 17em;
-  padding: 1em 1em;
-  background-color:#F7F7F7;
-  border: 1px solid #E6E6E6;
-}
-.container .images{
-  width:5em;
-  float: left;
-  img{
-    width: 5em;
-    background-size: cover;
-  }
-}
-.container .infomation{
-  width:12em;
-  float:right;
-}
-.container ul li{
-  display: block;
-  font-size: 0.8em;
-  line-height: 1.5em;
-}
-.load{
-  clear: left;
-  font-size: 1em;
-  width: 76em;
-  margin: 0 auto;
-  text-align: center;
-  padding: 1em 0;
-  background:linear-gradient(to bottom, #FFFFFF, #E6E6E6);
-}
-.sideBar{
-  width: 20em;
-  height: 100%;
-  color: #FFFFFF;
-}
-.sideBar nav{
-  width: 3em;
-  background-color: #504D53;
-}

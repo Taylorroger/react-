@@ -3,16 +3,10 @@
  */
 import React from 'react';
 import './store.scss'
-import '../../common.css'
 import Send from "../data/data";
 import Test from '../../container/handleOrder'
 import ShowBox from '../../container/shoppingCar'
-import MenuRow from  './row'
-import ReactDOM from 'react-dom'
-import {createStore} from 'redux'
-import {handleItem} from "../../reducers/handleOrder";
-import {DECREASE_ITEM, INCREASE_ITEM} from "../../actions/const";
-import MenuCell from "./test";
+
 //顶部商家基本信息展示
 class MainInfo extends React.Component{
     constructor(props){

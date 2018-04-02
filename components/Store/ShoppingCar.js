@@ -55,20 +55,20 @@ class ShoppingCar extends React.Component{
     render(){
             var selectStyle=this.state.closed?{right:-16+'em'}:{right:0+'em'}
         return (
-            <article className='shopping_Car' style={selectStyle}>
-             <section className='navBar'>
+            <div className='shopping_Car' style={selectStyle}>
+             <div className='navBar'>
                 <ul>
                     <li id='order' onClick={this.handleClick}>我的订单</li>
                     <li id='shopping_car' onClick={this.handleClick}>购物车</li>
                     <li id='info' onClick={this.handleClick}>我的信息</li>
                     <li>App下载</li>
                 </ul>
-            </section>
-                <section className='content'>
+            </div>
+                <div className='content'>
                 <h6>{this.state.name}</h6>
                 <table>wu</table>
-            </section>
-        </article>)
+            </div>
+        </div>)
     }
 }
 export default ShoppingCar
