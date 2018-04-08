@@ -3,7 +3,6 @@
  */
 //登陆页面组件
 import React from 'react';
-import Redirect from 'react-router'
 import "./log.scss"
 import {Link,IndexLink} from 'react-router';
 
