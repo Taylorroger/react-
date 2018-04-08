@@ -82,16 +82,6 @@ class Bullet extends React.Component{
         )
     }
 }
-//商品选购页面的购物车
-class ShoppingCar extends React.Component{
-    render(){
-        return(
-            <section className="shoppingCar">
-                <ShowBox/>
-            </section>
-        )
-    }
-}
 class Detail extends React.Component{
     constructor(props){
         super(props)
@@ -117,7 +107,7 @@ class Detail extends React.Component{
             </div>
                 <aside>
                     <Bullet/>
-                    <ShoppingCar/>
+                    <ShowBox/>
                 </aside>
             </div>
         )

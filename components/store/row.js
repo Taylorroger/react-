@@ -25,11 +25,10 @@ class MenuRow extends React.Component {
         var arr = para.foods;
         var ListItem = [];
         arr.forEach(function (item, i){
-            for(var i=0,len=data.length;i<len;i++){
-                if(item.name==data[i].name){
-                    item.number=data[i].number
-                }else {
-                    item.number=0
+            item.number=0
+            for(var j=0,len=data.length;j<len;j++){
+                if(item.name==data[j].name){
+                    item.number=data[j].number
                 }
             }
             ListItem.push(<MenuCell list={item} key={item.name.toString()} addtion={add} decrease={dec}/>)
@@ -50,15 +49,16 @@ class MenuCell extends React.Component {
     }
     render(){
         let {list,addtion,decrease}=this.props
-        var btn = list.number? <fieldset>
-            <button onClick={()=>decrease(list.name)}>-</button>
-            <input value={list.number} onChange={()=>(list.number)} />
-            <button onClick={()=>addtion(list.name)}>+</button>
+        console.log(list.number)
+        var btn =list.number!==0?<fieldset>
+            <button className='decBtn' onClick={()=>decrease(list.name)}>-</button>
+            <input type='text' value={list.number}/>
+            <button className='increBtn' onClick={()=>addtion(list.name)}>+</button>
         </fieldset> :<button className='addBtn' onClick={()=>{addtion(list.name)}}>加入购物车</button>
         return (
             <li className="singleInfo">
                 <img src={'https://fuss10.elemecdn.com/' + list.image_path.replace(/(\S\S\S)/, "$1/").replace(/(\S)/, "$1/").replace(/(jpeg|png)/, "$1.$1")}/>
-                <p className="info">
+                <section className="info">
                     <h5>{list.name}</h5>
                     <ul>
                         <li>{list.description}</li>
@@ -66,7 +66,7 @@ class MenuCell extends React.Component {
                         <li>￥{list.rating_count}</li>
                         <li>{btn}</li>
                     </ul>
-                </p>
+                </section>
             </li>
         )
     }

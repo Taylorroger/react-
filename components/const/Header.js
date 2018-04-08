@@ -2,7 +2,7 @@
  * Created by zzl on 2017/6/1.
  */
 import React from 'react';
-import {Link,IndexLink} from 'react-router';
+import {Link} from 'react-router';
 import './header.scss'
 //头部导航栏
 class Header extends React.Component{

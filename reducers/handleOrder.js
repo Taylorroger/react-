@@ -4,37 +4,39 @@ import {DECREASE_ITEM} from "../actions/const";
 import {SET_NUMBER} from "../actions/const";
 import {SUBMIT_ORDER} from "../actions/const";
 function increase(state,action){
-    var temp={}
+    var temp
     var flag=false
-    if(!state.length){
-        return [...state,{name:action.name,number:action.number}]
+    var newState=state.concat()
+    if(!newState.length){
+        return [...newState,{name:action.name,number:action.number}]
     }else{
-        for(var i=0,len=state.length;i<len;i++){
-            temp=state[i]
-            if(state[i].name==action.name){
+        for(var i=0,len=newState.length;i<len;i++){
+            temp=newState[i]
+            if(newState[i].name==action.name){
                 flag=true
-                state.splice(i,1,{name:action.name,number:action.number+temp.number})
-                return state
+                newState.splice(i,1,{name:action.name,number:action.number+temp.number})
+                return newState
             }
         }
         if(!flag){
-            return [...state,{name:action.name,number:action.number}]
+            return [...newState,{name:action.name,number:action.number}]
         }
     }
 }
 //删减订单数量
 function decrease(state,action){
-    var temp={}
-    for(var i=0,len=state.length;i<len;i++){
-        temp=state[i]
+    var temp
+    var newState=state.concat()
+    for(var i=0,len=newState.length;i<len;i++){
+        temp=newState[i]
         if(temp.name==action.name){
             if(temp.number>1){
-                state.splice(i,1,{name:action.name,number:temp.number-action.number})
-                return state
-            }else{
-                return state.splice(i,1)
+                newState.splice(i,1,{name:action.name,number:temp.number-action.number})
+                return newState
+            }else if(temp.number==1){
+                newState.splice(i,1)
+                return newState
             }
-
         }
     }
 }

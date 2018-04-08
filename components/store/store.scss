@@ -43,7 +43,6 @@
       font-size: 1.2em;
       width: 4em;
       padding: 0 0.5em;
-      border-right: 1px solid gray;
     }
   }
   .right{
@@ -52,7 +51,6 @@
     float: right;
     li{
       list-style: none;
-      border-right:1px solid gray;
       display: inline-block;
      margin-right: 2em;
       padding-left: 0.5em;
@@ -94,6 +92,9 @@
 .content{
   width: 70em;
   overflow: hidden;
+  button:focus{
+    outline: none;
+  }
   p{
     font-size: 1em;
     small{
@@ -140,12 +141,30 @@
           }
          fieldset{
            width: 8em;
+           height: 1.5em;
+           line-height: 1.5em;
            border-radius: 1em;
-           button{
+           border: 1px solid #EEEEEE;
+           .decBtn{
              width: 2em;
+             height: 1.5em;
+             background-color: #EEEEEE;
+             border: 1px solid #EEEEEE;
+             -webkit-border-bottom-left-radius: 1em;
+             -webkit-border-top-left-radius: 1em;
+           }
+           .increBtn{
+             width: 2em;
+             height: 1.5em;
+             background-color: #EEEEEE;
+             border: 1px solid #EEEEEE;
+             -webkit-border-top-right-radius: 1em;
+             -webkit-border-bottom-right-radius: 1em;
            }
            input[type='text']{
-               width: 2em;
+               width: 3em;
+             height: 1.5em;
+             border: none;
            }
          }
         }
@@ -153,12 +172,14 @@
     }
   }
 }
+//侧栏样式 包含商家公告样式和购物车样式
 aside {
   width: 16em;
   position: relative;
   float: right;
   margin-top: 2em;
   margin-right: 4em;
+  //商家公告样式
   .notation {
     background-color: white;
     font-size: 0.8em;
@@ -176,30 +197,55 @@ aside {
       text-align: center;
     }
   }
-  .shoppingCar{
+  //购物车样式
+  .list{
     position: fixed;
     right:0;
     bottom: 0;
-    width:18em;
+    width:20em;
     border-top:2px solid #1E89E0;
-  }
-  .shoppingCar p{
-    width: inherit;
-    padding-top: 1em;
-    background-color: #FFFFFF;
-  }
-  .shoppingCar p span{
-    display: inline-block;
-    padding: 1em 0.5em;
-  }
-  .shoppingCar p span:first-child{
-    background-color: dimgray;
-    color: #E6E6E6;
-    width: 10em;
-  }
-  .shoppingCar p span:last-child{
-    background-color: #E6E6E6;
-    width: 6em;
+    opacity: 1;
+    button:focus{
+      outline: none;
+    }
+    p{
+      width: inherit;
+      padding-top: 1em;
+      background-color: #FFFFFF;
+      span{
+        display: inline-block;
+        padding: 1em 0.5em;
+      }
+      span:first-child{
+        background-color: dimgray;
+        color: #E6E6E6;
+      width: 10em;
+    }
+      span:last-child{
+      background-color: #E6E6E6;
+      width: 6em;
+    }
+    }
+    ul{
+      opacity: 1;
+      background-color: white;
+      li{
+        list-style: none;
+        display: block;
+        height: 2em;
+        opacity: 1;
+        input[type='text']{
+          width: 2em;
+          height: 1.5em;
+          border: 1px solid #EEEEEE;
+        }
+        button{
+          width: 2em;
+          height: 1.5em;
+          border: 1px solid #EEEEEE;
+        }
+    }
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import {addItem,decreaseItem,inputNumber} from "../actions/actions";
-import MenuRow from '../components/Store/row'
+import MenuRow from '../components/store/row'
 import {connect} from 'react-redux'
 
 const mapStateToProps=state=>{

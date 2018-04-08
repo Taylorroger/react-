@@ -1,6 +1,6 @@
 import React from 'react'
 import {addItem,decreaseItem,inputNumber} from "../actions/actions";
-import DisplayBox from '../components/Store/displayBox'
+import DisplayBox from '../components/store/displayBox'
 import {connect} from 'react-redux'
 
 const mapStateToProps=state=>{

@@ -2,7 +2,6 @@
  * Created by zzl on 2017/7/20.
  */
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './coopretation.scss';
 const Coopratation=()=>(
     <article className="coopration">
